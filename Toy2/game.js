@@ -80,6 +80,8 @@ PS.touch = function( x, y, data, options )
 	{
 		PS.color(x,y+1, rRan, gRan, bRan);
 	}
+
+	PS.audioPlay("fx_drip2", {volume: 0.50});
 };
 
 
@@ -93,8 +95,9 @@ PS.exitGrid = function( options )
 
 	if (numOutside > 15)
 	{
-			PS.statusText("Thats still not the grid.");
+			PS.statusText("That's still not the grid.");
 	}
 };
+
 
 
